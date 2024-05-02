@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostas Alphabet</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 20% 80%;
+        }
+
+        .lateral {
+            border-right: 2px solid black;
+        }
+        .coluna1 {
+            margin-bottom: 50px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .direito {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cabecalho {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        #logo {
+            height: 100px;
+            margin-top: 15px;
+            border-bottom: 2px solid black;
+        }
+
+        #logoAlphabet {
+            height: 100px;
+        }
+
+        .linha1 {
+            width: 300px;
+            height: 65px;
+            margin-top: 50px;
+            border-bottom: 2px solid black;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .apostas {
+            text-align: center;
+            margin: 100px 0px 100px 0px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2rem;
+        }
+
+        #certificadoSSL {
+            width: 90%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="lateral">
+            <div class="coluna1" id="logo"><a href="#"><img src="logo.png" alt="logo" id="logoAlphabet"></a></div>
+            <div class="coluna1"><a href="#">Futebol</a></div>
+            <div class="coluna1"><a href="#">Vôlei</a></div>
+            <div class="coluna1"><a href="#">Basquete</a></div>
+            <div class="coluna1"><a href="#">Tênis</a></div>
+            <div class="coluna1"><a href="#">Mais em Breve!</a></div>
+            <div class="coluna1"><a href="#"><img src="ssl.png" alt="Certificado SSL" id="certificadoSSL"></a></div>
+        </div>
+
+        <div class="direito">
+            <div class="cabecalho">
+                <div class="linha1"><a href="#">Apostar<a></div>
+                <div class="linha1"><a href="#">Minha Conta<a></div>
+                <div class="linha1"><a href="#">Tabela e partidas<a></div>
+                <div class="linha1"><a href="#">Termos e condições de uso<a></div>
+            </div>
+
+            <div class="apostas">
+                <div class="main">Seja bem-vindo(a) ao site oficial da Alphabet!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+CREATE TABLE fluxo_caixa (
+    id_caixa int PRIMARY KEY AUTO_INCREMENT,
+    vencimento date,
+    descricao varchar(200),
+    valor float(7,2),
+    recebidode varchar(100),
+    emitidopara varchar(100),
+    categoria varchar(10),
+    pago varchar(3),
+    recebido varchar(3)
+);
