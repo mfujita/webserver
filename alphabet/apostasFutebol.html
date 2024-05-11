@@ -61,7 +61,7 @@
 
         .apostas {
             text-align: center;
-            margin: 100px 0px 100px 0px;
+            margin: 20px 0px 100px 0px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 2rem;
         }
@@ -70,6 +70,21 @@
             width: 90%;
             text-align: center;
         }
+
+        .apostasfutebol {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .main { margin-bottom: 20px; }
+
+        .titulo { text-align: center;}
+
+        .col1 { font-size: 1.2rem; text-align:left; }
+        .col2 { font-size: 1.2rem; text-align:left; }
+        .col3 { font-size: 1.2rem; text-align:left; }
+        .opcao { margin: 30px 10px 10px 20px;}
+
 
     </style>
 </head>
@@ -94,7 +109,32 @@
             </div>
 
             <div class="apostas">
-                <div class="main">Seja bem-vindo(a) ao site oficial da Alphabet!</div>
+                <div class="main">Apostas esportivas - Categoria Futebol</div>
+                <div class="apostasfutebol">
+                    <div class="col1">
+                        <div class="titulo">Selecione um campeonato nacional</div>
+                        <input type="radio" class="opcao" name="nacional" value="brasileiraoa">BRASILEIRÃO SÉRIE A<br>
+                        <input type="radio" class="opcao" name="nacional" value="brasileiraob">BRASILEIRÃO SÉRIE B<br>
+                        <input type="radio" class="opcao" name="nacional" value="brasileiraoc">BRASILEIRÃO SÉRIE C<br>
+                        <input type="radio" class="opcao" name="nacional" value="brasileiraod">BRASILEIRÃO SÉRIE D<br>
+                    </div>
+                    <div class="col2">
+                        <div class="titulo">Selecione um campeonato internacional</div>
+                        <input type="radio" class="opcao" name="internacional" value="interlibertadores">LIBERTADORES<br>
+                        <input type="radio" class="opcao" name="internacional" value="intersulamericana">SULAMERICANA<br>
+                        <input type="radio" class="opcao" name="internacional" value="interchampionsleague">CHAMPIONS LEAGUE<br>
+                        <input type="radio" class="opcao" name="internacional" value="intereuropaleague">EUROPA LEAGUE<br>
+                        <input type="radio" class="opcao" name="internacional" value="interconferenceleague">CONFERENCE LEAGUE<br>
+                    </div>
+                    <div class="col3">
+                        <div class="titulo">Selecione um campeonato estadual</div>
+                        <input type="radio" class="opcao" name="estadual" value="paulista">CAMPEONATO PAULISTA<br>
+                        <input type="radio" class="opcao" name="estadual" value="carioca">CAMPEONATO CARIOCA<br>
+                        <input type="radio" class="opcao" name="estadual" value="mineiro">CAMPEONATO MINEIRO<br>
+                        <input type="radio" class="opcao" name="estadual" value="gaucho">CAMPEONATO GAÚCHO<br>
+                        <input type="radio" class="opcao" name="estadual" value="nordeste">COPA DO NORDESTE<br>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

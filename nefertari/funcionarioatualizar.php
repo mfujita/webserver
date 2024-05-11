@@ -8,25 +8,11 @@
 </head>
 <body>
     <div class="container">
-    <div class="row mb-5">
-            <a href="index.html"><button class="btn btn-secondary">Início</button></a>
-
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Funcionários</button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="funcionariocadastro.html">Cadastro</a>
-                    <a class="dropdown-item" href="funcionarioexibe.php">Listagem</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Conta a pagar/receber</button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="pagarreceberlancamento.html">Cadastro</a>
-                    <a class="dropdown-item" href="pagarreceberexibicao.php">Listagem</a>
-                </div>
-            </div>
-        </div>
+        <div class="d-flex ">
+            <div class="py-5 pr-3"><a href="index.html">Página<br>principal</a></div>
+            <div class="py-5 pr-3"><a href="funcionariocadastro.html">Cadastro de<br>funcionários</a></div>
+            <div class="py-5 pr-3"><a href="funcionarioexibe.php">Listagem de<br>funcionários</a></div>
+        </div>  
 
         <h1 class="text-center my-5">Correção dos dados do(a) funcionário(a)</h1>
 
@@ -53,18 +39,16 @@
             $telefone1=$_POST["telefone1"];
             $telefone2=$_POST["telefone2"];
             $email=$_POST["email"];
-            $cargo = $_POST["cargo"];
-            $salario = $_POST["salario"];
             $status=$_POST["status"];
 
             $matricula=$_POST["matricula"];
 
             include 'conn.php';
 
-            $sql = 'UPDATE funcionario SET nome="'.$nome.'", sexo="'.$sexo.'", dtnasc="'.$dtnasc.'", deficiencia="'.$deficiencia.'",
+            $sql = 'UPDATE funcionario SET nome="'.$nome.'", sexo="'.$sexo.'", dtnasc='.$dtnasc.', deficiencia="'.$deficiencia.'",
             estadocivil="'.$estadocivil.'", endereco="'.$endereco.'", bairro="'.$bairro.'", cidade="'.$cidade.'",
-            cep="'.$cep.'", telefone1="' . $telefone1 . '", telefone2="'.$telefone2.'", email="'.$email.'", 
-            cargo="'.$cargo.'", salario="'. $salario .'", status="'.$status.'" WHERE id = ' . $matricula;
+            cep="'.$cep.'", telefone1="' . $telefone1 . '", telefone2="'.$telefone2.'", email="'.$email.'",
+            status="'.$status.'" WHERE id = ' . $matricula;
             if (mysqli_query($conn, $sql)) {
                 echo "<h3>Registros armazenados</h3>";
                 echo '<div class="container mb-5">';
@@ -109,12 +93,6 @@
                 echo '      <div class="col-5">e-mail</div> <div>' . $email . "</div>";
                 echo '  </div>';
                 echo '  <div class="row py-2 border-bottom border-dark">';
-                echo '      <div class="col-5">Cargo</div> <div>' . $cargo . "</div>";
-                echo '  </div>';
-                echo '  <div class="row py-2 border-bottom border-dark">';
-                echo '      <div class="col-5">Salário</div> <div>' . $salario . "</div>";
-                echo '  </div>';
-                echo '  <div class="row py-2 border-bottom border-dark">';
                 echo '      <div class="col-5">Status</div> <div>' . $status . "</div>";
                 echo '  </div>';
                 echo '</div>';
@@ -129,9 +107,5 @@
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,27 @@
+Senha para alterar o status da "produção em trânsito"
+
+Registro não é apagado
+
+CREATE TABLE funcionario (
+	id int PRIMARY KEY AUTO_INCREMENT,
+	nome varchar(70),
+	dtnasc date,
+	sexo varchar(9),
+	escolaridade varchar(28),
+	deficiencia varchar(3),
+	estadocivil varchar(18),
+	endereco varchar(100),
+	bairro varchar(50),
+	cidade varchar(50),
+	cep varchar(9),
+	telefone1 varchar(18),
+	telefone2 varchar(18),
+	email varchar(30),
+	cargo varchar(80),
+	salario float(5,2),
+	status varchar(50) DEFAULT 'Ativo' 
+);
+
 CREATE TABLE fluxo_caixa (
     id_caixa int PRIMARY KEY AUTO_INCREMENT,
     vencimento date,
@@ -8,4 +32,23 @@ CREATE TABLE fluxo_caixa (
     categoria varchar(10),
     pago varchar(3),
     recebido varchar(3)
+);
+
+CREATE TABLE projeto (
+	id_projeto int PRIMARY KEY AUTO_INCREMENT,
+	nome_produto varchar(100),
+	materiais varchar(255),
+	custos float(6,2)
+);
+
+CREATE TABLE producao (
+	id_producao int PRIMARY KEY AUTO_INCREMENT,
+	materiais varchar(255),
+	especificacoes varchar(255)
+);
+
+CREATE TABLE estoque (
+	id_estoque int PRIMARY KEY AUTO_INCREMENT,
+	nome_produto varchar(100),
+	qtde_disponivel int
 );

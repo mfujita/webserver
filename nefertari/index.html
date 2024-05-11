@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Nefertari</title>
+    <style>
+        a { color: #e6d2f5;}
+        .top { background-color: #b98ad2; height: 15vh; }
+        .middle { background-color: #f7ebff; height: 75vh;}
+        .footer { background-color: #e6d2f5; height: 10vh; }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="d-flex ">
-            <div class="p-5"><a href="cadastrofuncionario.html">Cadastro de<br>funcionários</a></div>
-            <div class="p-5"><a href="exibefuncionario.php" target="_self">Listagem de<br>funcionários</a></div>
+    <div class="d-flex flex-column">
+        <div class="d-flex flex-row top">
+            <div class="pl-5 pt-3"><a href="funcionariocadastro.html">Cadastro de<br>funcionários</a></div>
+            <div class="pl-5 pt-3"><a href="funcionarioexibe.php" target="_self">Listagem de<br>funcionários</a></div>
         </div>
-        <div class="jumbotron jumbotron-fluid">
-            <h1>Nefertari ®</h1>
-        </div>   
+        <div class="d-flex flex-row justify-content-center align-items-center middle">
+            <div class="display-3 p-5">Nefertari<br>Joalheria</div>
+            <img src="logotipo_Nefertari.png" alt="logo" class="p-5">
+        </div>
+        <div class="d-flex flex-row footer">
+            <div class="flex-fill flex-grow-1"></div>
+        </div>
     </div>
 </body>
 </html>

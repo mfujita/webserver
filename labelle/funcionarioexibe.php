@@ -29,40 +29,43 @@
         </div>
 
         <h2 class="text-center my-5">Relação dos funcionários</h2>
-        <div class="row">
-            <div class="col-7 bg-primary">
-                <?php
-                    include 'conn.php';
-    
-                    $sql="SELECT id, nome from funcionario";
-                    $result=mysqli_query($conn, $sql);
-                    if (mysqli_num_rows($result) > 0)
+
+        <div class="bg-info">
+            <form action="funcionarioficha.php" method="get">
+                <div class="container">
+                    <p class="h3 text-center pt-4"><label for="matricula">Matrícula</label></p>
+                    <p><input type="text" name="matricula"></p>
+                    <p class="pb-5"><input type="submit" value="Buscar" name="buscar"> &nbsp&nbsp&nbsp&nbsp&nbsp <input type="submit" value="Atualizar" name="atualizar">&nbsp&nbsp&nbsp&nbsp&nbsp <input type="submit" value="Apagar" name="apagar"></p>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="bg-primary pb-5 mb-3">
+            <?php
+                include 'conn.php';
+
+                $sql="SELECT id, nome from funcionario";
+                $result=mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0)
+                {
+                    while ($rows = mysqli_fetch_assoc($result))
                     {
-                        while ($rows = mysqli_fetch_assoc($result))
+                        if (!empty($rows['nome']))
                         {
-                            if (!empty($rows['nome']))
-							{
-								echo '  <div class="row">';
-								echo '      <div class="col-1">' . $rows['id'] . '</div>';
-								echo '      <div class="col-7">' . $rows['nome'] . '</div>';
-								echo '  </div>';
-							}
+                            echo '  <div class="row">';
+                            echo '      <div class="col-1">' . $rows['id'] . '</div>';
+                            echo '      <div class="col-7">' . $rows['nome'] . '</div>';
+                            echo '  </div>';
                         }
                     }
-                    mysqli_close($conn);
-                ?>
-            </div>
-         
-            <div class="col-5 bg-info">
-                <form action="funcionarioficha.php" method="get">
-                    <div class="container">
-                        <p><label for="matricula">Matrícula</label></p>
-                        <p><input type="text" name="matricula"></p>
-                        <p><input type="submit" value="Buscar" name="buscar"> &nbsp&nbsp&nbsp&nbsp&nbsp <input type="submit" value="Atualizar" name="atualizar">&nbsp&nbsp&nbsp&nbsp&nbsp <input type="submit" value="Apagar" name="apagar"></p>
-                    </div>
-                </form>
-            </div>
+                }
+                mysqli_close($conn);
+            ?>
         </div>
+         
+            
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

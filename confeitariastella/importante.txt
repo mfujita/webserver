@@ -1,0 +1,16 @@
+[10/4 12:22] CAROLINE BREGANTIN RUIS
+Cadastro de Produtos: Nome, Descrição, Preço de venda, Ingredientes, tempo de preparo e imagem
+
+Gestão de estoque: Controle de Inventario sobre materiais necessarios para produção com alertas de estoque baixos e histórico de movimentação de estoque
+
+Materiais necessário|Quantidade|Situação
+
+Vendas: Registro de todas as transações de vendas como data, hora, produtos vendidos, preço, metodo de pagamento e informações do cliente
+
+Gastos: Gastos relacionados a compra de ingredientes, pagamento de funcionários, despesas gerais e outros custos
+
+Lucro: Calculo automático dos lucros com base nas vendas e nos gastos registrados
+
+Gestão de fornecedores: Registro de informações sobre os fornecedores de ingredientes e materiais, incluindo detalhes de contato, histórico de contas e preços negociados
+
+Gerenciamento de funcionários: controle de horarios, atribuição de tarefa e calculo de folha de pagamento
