@@ -1,0 +1,50 @@
+CREATE TABLE cadastroProdutos(
+	id_cadastroProdutos int PRIMARY KEY AUTO_INCREMENT,
+	nome varchar(100),
+	descricao varchar(250),
+	precoVenda float(7,2),
+	ingredientes varchar(250),
+	tempo de preparo varchar(20),
+	imagem varchar(250)
+);
+
+CREATE TABLE gestaoEstoque (
+	id_gestaoEstoque int PRIMARY KEY AUTO_INCREMENT,
+	materiais varchar(100),
+	quantidade int,
+	situação varchar(30)
+);
+
+CREATE TABLE vendas(
+	id_vendas int PRIMARY KEY AUTO_INCREMENT,
+	produto_vendido varchar(100),
+	preco float(7,2),
+	data DEFAULT Getdate(), 
+	hora DEFAULT CURRENT_TIMESTAMP, 
+	metodo de pagamento varchar(30),
+	informacos_cliente varchar(200)
+);
+
+CREATE TABLE gastos (
+	id_gastos int PRIMARY KEY AUTO_INCREMENT,
+	compra_ingredientes float(7,2),
+	pagamento_funcionarios float(7,2),
+	despesas_gerais float(7,2),
+	outros_custos float(7,2)
+);
+
+CREATE TABLE fornecedores (
+	id_fornecedores int PRIMARY KEY AUTO_INCREMENT,
+	nome_fornecedores varchar(150),
+	nome_materiais varchar(150),
+	contato varchar(40),
+	historico varchar(250),
+	precos float(7,2)
+);
+
+CREATE TABLE controleFuncionarios (
+	id_controleFuncionarios int PRIMARY KEY AUTO_INCREMENT,
+	horario_escala varchar(30),
+	tarefa varchar(200),
+	calculo_pagamento float(7,2)
+);

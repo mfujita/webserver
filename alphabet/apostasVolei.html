@@ -74,13 +74,11 @@
             grid-template-columns: auto auto auto;
         }
 
-        input[radio] { margin-bottom: 55px; }
-
         .main { margin-bottom: 20px; }
 
         .titulo { text-align: center;}
 
-        .col1 { font-size: 1.2rem; text-align:left;;}
+        .col1 { font-size: 1.2rem; text-align:left; }
         .col2 { font-size: 1.2rem; text-align:left; }
         .col3 { font-size: 1.2rem; text-align:left; }
         .opcao { margin: 30px 10px 10px 20px;}
@@ -92,7 +90,6 @@
         .maisEmBreve { color: rgb(31,78,121);}
 
         p { margin-left: 10px;}
-
     </style>
 </head>
 <body>
@@ -115,42 +112,38 @@
                     <div class="linha1"><a href="#" class="termos">Termos e condições de uso<a></div>
             </div>
 
-            <form action="apostasFutebol.php">
-                <div class="apostas">
-                    <div class="main">Apostas esportivas - Categoria Futebol</div>
-                    <div class="apostasfutebol">
-                        <div class="col1">
-                            <div class="titulo">Selecione um campeonato nacional</div>
-                            <p><input type="radio" name="opcao" value="brasileiraoa">BRASILEIRÃO SÉRIE A</p>
-                            <p><input type="radio" name="opcao" value="brasileiraob">BRASILEIRÃO SÉRIE B</p>
-                            <p><input type="radio" name="opcao" value="brasileiraoc">BRASILEIRÃO SÉRIE C</p>
-                            <p><input type="radio" name="opcao" value="brasileiraod">BRASILEIRÃO SÉRIE D</p>
-                        </div>
-                        <div class="col2">
-                            <div class="titulo">Selecione um campeonato internacional</div>
-                            <p><input type="radio" name="opcao" value="interlibertadores">LIBERTADORES</p>
-                            <p><input type="radio" name="opcao" value="intersulamericana">SULAMERICANA</p>
-                            <p><input type="radio" name="opcao" value="interchampionsleague">CHAMPIONS LEAGUE</p>
-                            <p><input type="radio" name="opcao" value="intereuropaleague">EUROPA LEAGUE</p>
-                            <p><input type="radio" name="opcao" value="interconferenceleague">CONFERENCE LEAGUE</p>
-                        </div>
-                        <div class="col3">
-                            <div class="titulo">Selecione um campeonato estadual</div>
-                            <p><input type="radio" name="opcao" value="paulista">CAMPEONATO PAULISTA</p>
-                            <p><input type="radio" name="opcao" value="carioca">CAMPEONATO CARIOCA</p>
-                            <p><input type="radio" name="opcao" value="mineiro">CAMPEONATO MINEIRO</p>
-                            <p><input type="radio" name="opcao" value="gaucho">CAMPEONATO GAÚCHO</p>
-                            <p><input type="radio" name="opcao" value="nordeste">COPA DO NORDESTE</p>
-                        </div>
+            <div class="apostas">
+                <div class="main">Apostas esportivas - Categoria Vôlei</div>
+                <div class="apostasfutebol">
+                    <div class="col1">
+                        <div class="titulo">Selecione um campeonato nacional</div>
+                        <p><input type="radio" name="opcao" value="brasileiraoa">SUPER LIGA</p>
+                        <p><input type="radio" name="opcao" value="brasileiraob">SUPER LIGA B</p>
+                        <p><input type="radio" name="opcao" value="brasileiraoc">COPA DO BRASIL</p>
+                        <p><input type="radio" name="opcao" value="brasileiraod">SUPERCOPA</p>
+                    </div>
+                    <div class="col2">
+                        <div class="titulo">Selecione um campeonato internacional</div>
+                        <p><input type="radio" name="opcao" value="interlibertadores">LIGA DAS NAÇÕES</p>
+                        <p><input type="radio" name="opcao" value="intersulamericana">CAMPEONATO MUNDIAL DE VÔLEI</p>
+                        <p><input type="radio" name="opcao" value="interchampionsleague">COPA DO MUNDO</p>
+                        <p><input type="radio" name="opcao" value="intereuropaleague">TORNEIO OLÍMPICO DE VOLEI</p>
+                    </div>
+                    <div class="col3">
+                        <div class="titulo">Selecione um campeonato estadual</div>
+                        <p><input type="radio" name="opcao" value="carioca">CAMPEONATO CARIOCA DE VÔLEI</p>
+                        <p><input type="radio" name="opcao" value="mineiro">CAMPEONATO MINEIRO DE VÔLEI</p>
+                        <p><input type="radio" name="opcao" value="gaucho">CAMPEONATO GAÚCHO DE VÔLEI</p>
+                        <p><input type="radio" name="opcao" value="nordeste">CAMPEONATO CEARÁ DE VÔLEI</p>
+                    </div>
 
-                        <div class="col1">
-                            <p>Selecione o gênero</p>
-                            <p><input type="radio" class="genero" name="masculino">Masculino</p>
-                            <p><input type="radio" class="genero" name="feminino">Feminino</p>
-                        </div>
+                    <div class="col1">
+                        <p>Selecione o gênero</p>
+                        <p><input type="radio" class="genero" name="masculino">Masculino</p>
+                        <p><input type="radio" class="genero" name="feminino">Feminino</p>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </body>

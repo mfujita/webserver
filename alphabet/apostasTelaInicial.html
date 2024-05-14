@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apostas Alphabet</title>
     <style>
+        body { font-family: Arial; }
         .grid {
             display: grid;
             grid-template-columns: 20% 80%;
@@ -16,7 +17,6 @@
         .coluna1 {
             margin-bottom: 50px;
             text-align: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             text-transform: uppercase;
         }
 
@@ -47,12 +47,11 @@
             text-align: center;
             justify-content: space-between;
             align-items: center;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             text-transform: uppercase;
         }
 
         .apostar {
-            color: red;
+            color: rgb(192,0,0);
         }
 
         a {
@@ -62,7 +61,7 @@
         .apostas {
             text-align: center;
             margin: 100px 0px 100px 0px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
             font-size: 2rem;
         }
 
@@ -71,26 +70,31 @@
             text-align: center;
         }
 
+        .minhaConta { color: rgb(127,96,0); }
+        .tabelas_partidas { color: rgb(82,82,82);}
+        .termos { color: rgb(31,78,121);}
+        .modalidades { color: rgb(56,87,35);}
+        .maisEmBreve { color: rgb(31,78,121);}
     </style>
 </head>
 <body>
     <div class="grid">
         <div class="lateral">
             <div class="coluna1" id="logo"><a href="#"><img src="logo.png" alt="logo" id="logoAlphabet"></a></div>
-            <div class="coluna1"><a href="#">Futebol</a></div>
-            <div class="coluna1"><a href="#">Vôlei</a></div>
-            <div class="coluna1"><a href="#">Basquete</a></div>
-            <div class="coluna1"><a href="#">Tênis</a></div>
-            <div class="coluna1"><a href="#">Mais em Breve!</a></div>
+            <div class="coluna1"><a href="apostasFutebol.html" class="modalidades">Futebol</a></div>
+            <div class="coluna1"><a href="apostasVolei.html" class="modalidades">Vôlei</a></div>
+            <div class="coluna1"><a href="#" class="modalidades">Basquete</a></div>
+            <div class="coluna1"><a href="apostasTenis.html" class="modalidades">Tênis</a></div>
+            <div class="coluna1"><a href="#" class="maisEmBreve">Mais em Breve!</a></div>
             <div class="coluna1"><a href="#"><img src="ssl.png" alt="Certificado SSL" id="certificadoSSL"></a></div>
         </div>
 
         <div class="direito">
             <div class="cabecalho">
                 <div class="linha1"><a href="#" class="apostar">Apostar<a></div>
-                <div class="linha1"><a href="#">Minha Conta<a></div>
-                <div class="linha1"><a href="#">Tabela e partidas<a></div>
-                <div class="linha1"><a href="#">Termos e condições de uso<a></div>
+                <div class="linha1"><a href="#" class="minhaConta">Minha Conta<a></div>
+                <div class="linha1"><a href="#" class="tabelas_partidas">Tabela e partidas<a></div>
+                <div class="linha1"><a href="#" class="termos">Termos e condições de uso<a></div>
             </div>
 
             <div class="apostas">
