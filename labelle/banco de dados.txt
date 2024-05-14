@@ -38,6 +38,7 @@ CREATE TABLE projeto (
 	id_projeto int PRIMARY KEY AUTO_INCREMENT,
 	nome_produto varchar(100),
 	materiais varchar(255),
+	endereco_imagem varchar(255),
 	custos float(6,2)
 );
 
@@ -51,4 +52,12 @@ CREATE TABLE estoque (
 	id_estoque int PRIMARY KEY AUTO_INCREMENT,
 	nome_produto varchar(100),
 	qtde_disponivel int
+);
+
+CREATE TABLE financa (
+	id_venda int PRIMARY KEY AUTO_INCREMENT,
+	nome_produto varchar(100),
+	custo_producao float(7,2),
+	despesas float(7,2),
+	lucro float(7,2)
 );
