@@ -71,12 +71,12 @@
 
         .apostasfutebol {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto;
         }
 
         .main { margin-bottom: 20px; }
 
-        .titulo { text-align: center;}
+        .titulo { margin-left: 20%;}
 
         .col1 { font-size: 1.2rem; text-align:left; }
         .col2 { font-size: 1.2rem; text-align:left; }
@@ -113,34 +113,27 @@
             </div>
 
             <div class="apostas">
-                <div class="main">Apostas esportivas - Categoria Vôlei</div>
+                <div class="main">Apostas esportivas - Categoria Basquete</div>
                 <div class="apostasfutebol">
                     <div class="col1">
                         <div class="titulo">Selecione um campeonato nacional</div>
-                        <p><input type="radio" name="opcao" value="">SUPER LIGA</p>
-                        <p><input type="radio" name="opcao" value="">SUPER LIGA B</p>
-                        <p><input type="radio" name="opcao" value="">COPA DO BRASIL</p>
-                        <p><input type="radio" name="opcao" value="">SUPERCOPA</p>
+                        <p><input type="radio" name="opcao" value="" class="titulo">Liga de Basquete LBF</p>
+                        <p><input type="radio" name="opcao" value="" class="titulo">Novo Basquete Brasil NBB</p>
+                        <p><input type="radio" name="opcao" value="" class="titulo">Playoff</p>
+                        <p><input type="radio" name="opcao" value="" class="titulo">SUPERCOPA</p>
                     </div>
                     <div class="col2">
                         <div class="titulo">Selecione um campeonato internacional</div>
-                        <p><input type="radio" name="opcao" value="">LIGA DAS NAÇÕES</p>
-                        <p><input type="radio" name="opcao" value="">CAMPEONATO MUNDIAL DE VÔLEI</p>
-                        <p><input type="radio" name="opcao" value="">COPA DO MUNDO</p>
-                        <p><input type="radio" name="opcao" value="">TORNEIO OLÍMPICO DE VOLEI</p>
-                    </div>
-                    <div class="col3">
-                        <div class="titulo">Selecione um campeonato estadual</div>
-                        <p><input type="radio" name="opcao" value="">CAMPEONATO CARIOCA DE VÔLEI</p>
-                        <p><input type="radio" name="opcao" value="">CAMPEONATO MINEIRO DE VÔLEI</p>
-                        <p><input type="radio" name="opcao" value="">CAMPEONATO GAÚCHO DE VÔLEI</p>
-                        <p><input type="radio" name="opcao" value="">CAMPEONATO CEARÁ DE VÔLEI</p>
+                        <p><input type="radio" name="opcao" value="" class="titulo">NBA</p>
+                        <p><input type="radio" name="opcao" value="" class="titulo">Euroleague</p>
+                        <p><input type="radio" name="opcao" value="" class="titulo">FIBA Basketball World Cup</p>
+                        <p><input type="radio" name="opcao" value="" class="titulo">Jogos Olímpicos</p>
                     </div>
 
                     <div class="col1">
-                        <p>Selecione o gênero</p>
-                        <p><input type="radio" class="genero" name="masculino">Masculino</p>
-                        <p><input type="radio" class="genero" name="feminino">Feminino</p>
+                        <p class="titulo">Selecione o gênero</p>
+                        <p><input type="radio" name="genero" class="titulo" value="masculino">Masculino</p>
+                        <p><input type="radio" name="genero" class="titulo" value="feminino">Feminino</p>
                     </div>
                 </div>
             </div>
