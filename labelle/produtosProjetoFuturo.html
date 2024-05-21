@@ -30,6 +30,7 @@
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Produtos</button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="produtosProjetoFuturo.html">Projeto futuro</a>
+                    <a class="dropdown-item" href="produtosProjetoFuturoListagem.php">Projeto futuro Listagem</a>
                     <a class="dropdown-item" href="produtosProducao.html">Produção</a>
                     <a class="dropdown-item" href="produtosEstoque.html">Produtos em estoque</a>
                     <a class="dropdown-item" href="produtosTransito.html">Produtos em trânsito</a>
@@ -40,53 +41,47 @@
 
         <h1 class="display-4 text-center mb-5">Projetos Futuros</h1>
 
-        <div class="row">
-            <div class="col-4">
-                <div class="border border-dark h-100 w-100"></div>
-            </div>
-            <div class="col-8">
-                <form action="produtosProjetoFuturo.php">
-                    <div class="container">
-                        <div class="row mb-2">
-                            <div class="col-3">
-                                <label for="nome">Nome do produto</label>
-                            </div>
-                            <div class="col-5">
-                                <input type="text" name="nome" class="form-control border border-dark">
-                            </div>
+            <form action="produtosProjetoFuturo.php" method="POST">
+                <div class="container">
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label for="nome">Nome do produto</label>
                         </div>
-                        <div class="row mb-2">
-                            <div class="col-3">
-                                <label for="materiais">Materiais</label>
-                            </div>
-                            <div class="col-5">
-                                <input type="text" name="materiais" class="form-control border border-dark">
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-3">
-                                <label for="custos">Custos</label>
-                            </div>
-                            <div class="col-5">
-                                <input type="text" name="custos" class="form-control border border-dark">
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-3">
-                                <label for="enderecoimagem">Endereço imagem</label>
-                            </div>
-                            <div class="col-5">
-                                <input type="text" name="enderecoimagem" class="form-control border border-dark">
-                            </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col-5 text-right">
-                                <input type="submit" value="Enviar" class="btn btn-primary">
-                            </div>
+                        <div class="col-5">
+                            <input type="text" name="nome" class="form-control border border-dark">
                         </div>
                     </div>
-                </form>
-            </div>
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label for="materiais">Materiais</label>
+                        </div>
+                        <div class="col-5">
+                            <input type="text" name="materiais" class="form-control border border-dark">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label for="custos">Custos</label>
+                        </div>
+                        <div class="col-5">
+                            <input type="text" name="custos" class="form-control border border-dark">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label for="enderecoimagem">Endereço imagem</label>
+                        </div>
+                        <div class="col-5">
+                            <input type="text" name="enderecoimagem" class="form-control border border-dark">
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-5 text-right">
+                            <input type="submit" value="Enviar" class="btn btn-primary">
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 

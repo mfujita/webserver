@@ -34,12 +34,12 @@ CREATE TABLE fluxo_caixa (
     recebido varchar(3)
 );
 
-CREATE TABLE projeto (
+CREATE TABLE projetoFuturo (
 	id_projeto int PRIMARY KEY AUTO_INCREMENT,
 	nome_produto varchar(100),
 	materiais varchar(255),
 	endereco_imagem varchar(255),
-	custos float(6,2)
+	custos float(10,2)
 );
 
 CREATE TABLE producao (
