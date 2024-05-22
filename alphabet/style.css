@@ -1,0 +1,76 @@
+body { font-family: Arial; }
+.grid {
+    display: grid;
+    grid-template-columns: 16% 84%;
+}
+
+.lateral {
+    border-right: 2px solid black;
+}
+.coluna1 {
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.direito {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#logo {
+    height: 100px;
+    margin-top: 15px;
+    border-bottom: 2px solid black;
+}
+
+#logoAlphabet {
+    height: 100px;
+}
+
+.linha1 {
+    width: 300px;
+    height: 65px;
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.apostar {
+    color: rgb(192,0,0);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    text-align: justify;
+    margin: 50px 0px 100px 0px;    
+    font-size: 1.45rem;
+}
+
+.titulo { margin: 20px; }
+
+#certificadoSSL {
+    width: 90%;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.minhaConta { color: rgb(127,96,0); }
+.tabelas_partidas { color: rgb(82,82,82);}
+.termos { color: rgb(31,78,121);}
+.modalidades { color: rgb(56,87,35);}
+.maisEmBreve { color: rgb(31,78,121);}
+
