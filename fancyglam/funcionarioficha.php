@@ -10,8 +10,8 @@
     <div class="container">
         <div class="d-flex ">
             <div class="py-5 pr-3"><a href="index.html">Página<br>principal</a></div>
-            <div class="py-5 pr-3"><a href="cadastrofuncionario.html">Cadastro de<br>funcionários</a></div>
-            <div class="py-5 pr-3"><a href="exibefuncionario.php">Listagem de<br>funcionários</a></div>
+            <div class="py-5 pr-3"><a href="funcionariocadastro.html">Cadastro de<br>funcionários</a></div>
+            <div class="py-5 pr-3"><a href="funcionarioexibe.php">Listagem de<br>funcionários</a></div>
         </div>        
         
         <?php
@@ -98,6 +98,17 @@
                             echo '    <div class="col-3">Situação </div>';
                             echo '    <div class="col-9">' . $rows["status"] . '</div>';
                             echo '</div>';
+                            echo '<h4 class="text-left">Cargo & Salário</h4>';
+                            echo '<div class="container border border-dark mb-3">';
+                            echo '  <div class="row my-2">';
+                            echo '    <div class="col-3">Cargo</div>';
+                            echo '    <div class="col-9">' . $rows["cargo"] . '</div>';
+                            echo '  </div>';
+                            echo '  <div class="row my-2">';
+                            echo '    <div class="col-3">Salário</div>';
+                            echo '    <div class="col-9">' . $rows["salario"] . '</div>';
+                            echo '  </div>';
+                            echo '</div>';
                         }
                     }
                 }
@@ -112,7 +123,7 @@
                         if (!empty($rows['nome']))
                         {
                             echo '<h4 class="text-left">Informações pessoais</h4>';
-                            echo '<form action="atualizarfuncionario.php" method="post">';
+                            echo '<form action="funcionarioatualizar.php" method="post">';
                             echo '  <div class="container border border-dark mb-3">';
                             echo '    <div class="row my-2">';
                             echo '        <div class="col-3">Nome: </div>';
@@ -187,6 +198,18 @@
                             echo '        <div class="col-9"><input type="text" class="form-control" name="email" value="' . $rows["email"] . '" .  size="80"></div>';
                             echo '    </div>';
                             echo '  </div>';
+
+                            echo '<h4 class="text-left">Cargo & Salário</h4>';
+                            echo '<div class="container border border-dark mb-3">';
+                            echo '  <div class="row my-2">';
+                            echo '    <div class="col-3">Cargo</div>';
+                            echo '    <div class="col-9"><input type="text" class="form-control" name="cargo" value="' . $rows["cargo"] . '"></div>';
+                            echo '  </div>';
+                            echo '  <div class="row my-2">';
+                            echo '    <div class="col-3">Salário</div>';
+                            echo '    <div class="col-9"><input type="text" class="form-control" name="salario" value="' . $rows["salario"] . '"></div>';
+                            echo '  </div>';
+                            echo '</div>';
 
                             echo '  <h4 class="text-left">Status</h4>';
                             echo '  <div class="row my-2">';

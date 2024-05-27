@@ -10,14 +10,14 @@
     <div class="container">
         <div class="d-flex ">
             <div class="p-5"><a href="index.html">Página<br>principal</a></div>
-            <div class="p-5"><a href="exibefuncionario.php">Listagem de<br>funcionários</a></div>
+            <div class="p-5"><a href="funcionarioexibe.php">Listagem de<br>funcionários</a></div>
         </div>
 
 
         <h2 class="text-center my-5">Cadastro de funcionários</h2>
         <h4 class="text-center my-3">Ficha Cadastral</h4>
 
-        <form action="cadastrofuncionario.php" method="post">
+        <form action="funcionariocadastro.php" method="post">
             <h4 class="text-left">Informações pessoais</h4>
             <div class="container border border-dark mb-3">
                 <div class="row my-2">
@@ -104,10 +104,21 @@
                 </div>
             </div>
 
+            <h4 class="text-left">Cargo & Salário</h4>
+            <div class="container border border-dark mb-3">
+                <div class="row my-2">
+                    <div class="col-4"><label for="cargo">Cargo</label></div>
+                    <div class="col-8"><input type="text" name="cargo" class="form-control"></div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-4"><label for="salario">Salário</label></div>
+                    <div class="col-8"><input type="text" name="salario" class="form-control"></div>
+                </div>
+            </div>
+
             <div class="row mb-5">
                 <input type="submit" name="enviar" class="d-block mx-auto">
             </div>
-            
         </form>
     </div>
 </body>

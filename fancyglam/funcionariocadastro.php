@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="d-flex ">
+        <div class="d-flex">
             <div class="p-5"><a href="index.html">Página<br>principal</a></div>
-            <div class="p-5"><a href="cadastrofuncionario.html">Cadastro de<br>funcionários</a></div>
-            <div class="p-5"><a href="exibefuncionario.php">Listagem de<br>funcionários</a></div>
+            <div class="p-5"><a href="funcionariocadastro.html">Cadastro de<br>funcionários</a></div>
+            <div class="p-5"><a href="funcionarioexibe.php">Listagem de<br>funcionários</a></div>
         </div>
 <?php
 
@@ -37,6 +37,8 @@ $cep=$_POST["cep"];
 $telefone1=$_POST["telefone1"];
 $telefone2=$_POST["telefone2"];
 $email=$_POST["email"];
+$cargo=$_POST["cargo"];
+$salario=str_replace(",",".", $_POST["salario"]);
 
 // echo $nome . "<br>";
 // echo $dtnasc . "<br>";
@@ -54,7 +56,7 @@ $email=$_POST["email"];
 
 include 'conn.php';
 
-$sql = "INSERT into funcionario (nome, dtnasc, sexo, escolaridade, deficiencia, estadocivil, endereco, bairro, cidade, cep, telefone1, telefone2, email) values ('$nome', '$dtnasc', '$sexo', '$escolaridade', '$deficiencia', '$estadocivil', '$endereco', '$bairro', '$cidade', '$cep', '$telefone1', '$telefone2', '$email')";
+$sql = "INSERT into funcionario (nome, dtnasc, sexo, escolaridade, deficiencia, estadocivil, endereco, bairro, cidade, cep, telefone1, telefone2, email,cargo, salario) values ('$nome', '$dtnasc', '$sexo', '$escolaridade', '$deficiencia', '$estadocivil', '$endereco', '$bairro', '$cidade', '$cep', '$telefone1', '$telefone2', '$email', '$cargo', $salario)";
 if (mysqli_query($conn, $sql)) {
     echo "<h3>Registros armazenados</h3>"; 
     echo $nome . "<br>";
@@ -70,6 +72,8 @@ if (mysqli_query($conn, $sql)) {
     echo $telefone1 . "<br>";
     echo $telefone2 . "<br>";
     echo $email . "<br>";
+    echo $cargo . "<br>";
+    echo $salario . "<br>";
 }
 
 mysqli_close($conn);

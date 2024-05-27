@@ -10,8 +10,8 @@
     <div class="container">
         <div class="d-flex ">
             <div class="py-5 pr-3"><a href="index.html">Página<br>principal</a></div>
-            <div class="py-5 pr-3"><a href="cadastrofuncionario.html">Cadastro de<br>funcionários</a></div>
-            <div class="py-5 pr-3"><a href="exibefuncionario.php">Listagem de<br>funcionários</a></div>
+            <div class="py-5 pr-3"><a href="funcionariocadastro.html">Cadastro de<br>funcionários</a></div>
+            <div class="py-5 pr-3"><a href="funcionarioexibe.php">Listagem de<br>funcionários</a></div>
         </div>  
 
         <h1 class="text-center my-5">Correção dos dados do(a) funcionário(a)</h1>
@@ -39,6 +39,8 @@
             $telefone1=$_POST["telefone1"];
             $telefone2=$_POST["telefone2"];
             $email=$_POST["email"];
+            $cargo=$_POST["cargo"];
+            $salario=$_POST["salario"];
             $status=$_POST["status"];
 
             $matricula=$_POST["matricula"];
@@ -48,7 +50,7 @@
             $sql = 'UPDATE funcionario SET nome="'.$nome.'", sexo="'.$sexo.'", dtnasc='.$dtnasc.', deficiencia="'.$deficiencia.'",
             estadocivil="'.$estadocivil.'", endereco="'.$endereco.'", bairro="'.$bairro.'", cidade="'.$cidade.'",
             cep="'.$cep.'", telefone1="' . $telefone1 . '", telefone2="'.$telefone2.'", email="'.$email.'",
-            status="'.$status.'" WHERE id = ' . $matricula;
+            cargo="'.$cargo.'",salario='.str_replace(",",".", $_POST["salario"]).', status="'.$status.'" WHERE id = ' . $matricula;
             if (mysqli_query($conn, $sql)) {
                 echo "<h3>Registros armazenados</h3>";
                 echo '<div class="container mb-5">';
@@ -91,6 +93,12 @@
                 echo '  </div>';
                 echo '  <div class="row py-2 border-bottom border-dark">';
                 echo '      <div class="col-5">e-mail</div> <div>' . $email . "</div>";
+                echo '  </div>';
+                echo '  <div class="row py-2 border-bottom border-dark">';
+                echo '      <div class="col-5">Cargo</div> <div>' . $cargo . "</div>";
+                echo '  </div>';
+                echo '  <div class="row py-2 border-bottom border-dark">';
+                echo '      <div class="col-5">Salário</div> <div>' . $salario . "</div>";
                 echo '  </div>';
                 echo '  <div class="row py-2 border-bottom border-dark">';
                 echo '      <div class="col-5">Status</div> <div>' . $status . "</div>";
