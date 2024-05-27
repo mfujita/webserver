@@ -1,0 +1,13 @@
+.pinyon-script-regular {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+body {
+    background: rgb(53,51,205);
+    background: linear-gradient(180deg, rgba(53,51,205,1) 0%, rgba(0,0,0,1) 100%);
+    padding-left: 10px;
+    color: white;
+}

@@ -1,0 +1,7 @@
+CREATE TABLE Estoque (
+	id_produto INT PRIMARY KEY AUTO_INCREMENT, 
+	nome_produto VARCHAR(100),
+	quantidade INT,
+	valor_unitario_compra FLOAT(7,2),
+	valor_unitario_venda FLOAT(7,2)
+);
