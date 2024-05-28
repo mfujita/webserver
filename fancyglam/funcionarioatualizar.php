@@ -28,16 +28,14 @@
             $nome=$_POST["nome"];
             $sexo = $_POST["sexo"];
             $dtnasc=$_POST["dtnasc"];
-            $escolaridade=$_POST["escolaridade"];
             $dtnascCopia = $dtnasc;
             $campos = explode('/',$dtnascCopia);
             $dia=$campos[0];
             $mes=$campos[1];
             $ano=$campos[2];
-            // echo "Dia " . "$dia" . "<br>";
-            // echo "Mes " . "$mes" . "<br>";
-            // echo "Ano " . "$ano" . "<br>";
             $dtnasc = "$ano" . "-" . "$mes" . "-" . "$dia";
+            echo $dtnasc;
+            $escolaridade=$_POST["escolaridade"];
             $deficiencia=$_POST["deficiencia"];
             $estadocivil=$_POST["estadocivil"];
             $endereco=$_POST["endereco"];
@@ -55,7 +53,7 @@
 
             include 'conn.php';
 
-            $sql = 'UPDATE funcionario SET nome="'.$nome.'", sexo="'.$sexo.'", dtnasc='.$dtnasc.', deficiencia="'.$deficiencia.'",
+            $sql = 'UPDATE funcionario SET nome="'.$nome.'", sexo="'.$sexo.'", dtnasc="'.$dtnasc.'", deficiencia="'.$deficiencia.'",
             estadocivil="'.$estadocivil.'", endereco="'.$endereco.'", bairro="'.$bairro.'", cidade="'.$cidade.'",
             cep="'.$cep.'", telefone1="' . $telefone1 . '", telefone2="'.$telefone2.'", email="'.$email.'",
             cargo="'.$cargo.'",salario='.str_replace(",",".", $_POST["salario"]).', status="'.$status.'" WHERE id = ' . $matricula;

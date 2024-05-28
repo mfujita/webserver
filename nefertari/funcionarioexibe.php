@@ -39,7 +39,7 @@
             </div>
          
             <div class="col-5 bg-info">
-                <form action="fichafuncionario.php" method="get">
+                <form action="funcionarioficha.php" method="get">
                     <div class="container">
                         <p><label for="matricula">Matrícula</label></p>
                         <p><input type="text" name="matricula"></p>

@@ -112,7 +112,7 @@
                         if (!empty($rows['nome']))
                         {
                             echo '<h4 class="text-left">Informações pessoais</h4>';
-                            echo '<form action="atualizarfuncionario.php" method="post">';
+                            echo '<form action="funcionarioatualizar.php" method="post">';
                             echo '  <div class="container border border-dark mb-3">';
                             echo '    <div class="row my-2">';
                             echo '        <div class="col-3">Nome: </div>';

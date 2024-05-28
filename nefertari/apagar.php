@@ -16,7 +16,7 @@
         if (mysqli_query($conn, $sql)) 
         {
             echo '<script>alert("Matrícula '. $matricula .' removida com sucesso!")</script>';
-            echo '<script>window.location = "exibefuncionario.php"</script>';
+            echo '<script>window.location = "funcionarioexibe.php"</script>';
         }
     ?>
 
