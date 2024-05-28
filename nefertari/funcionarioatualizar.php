@@ -45,7 +45,7 @@
 
             include 'conn.php';
 
-            $sql = 'UPDATE funcionario SET nome="'.$nome.'", sexo="'.$sexo.'", dtnasc='.$dtnasc.', deficiencia="'.$deficiencia.'",
+            $sql = 'UPDATE funcionario SET nome="'.$nome.'", sexo="'.$sexo.'", dtnasc="'.$dtnasc.'", deficiencia="'.$deficiencia.'",
             estadocivil="'.$estadocivil.'", endereco="'.$endereco.'", bairro="'.$bairro.'", cidade="'.$cidade.'",
             cep="'.$cep.'", telefone1="' . $telefone1 . '", telefone2="'.$telefone2.'", email="'.$email.'",
             status="'.$status.'" WHERE id = ' . $matricula;
