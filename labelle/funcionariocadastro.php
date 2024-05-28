@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Funcionário Cadastro</title>
 </head>
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <a href="index.html"><button class="btn btn-secondary">Início</button></a>
 
             <div class="dropdown">
@@ -24,6 +24,16 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="pagarreceberlancamento.html">Cadastro</a>
                     <a class="dropdown-item" href="pagarreceberexibicao.php">Listagem</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Produtos</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="produtosProjetoFuturo.html">Projeto futuro</a>
+                    <a class="dropdown-item" href="produtosProducao.html">Produção</a>
+                    <a class="dropdown-item" href="produtosEstoque.html">Produtos em estoque</a>
+                    <a class="dropdown-item" href="produtosTransito.html">Produtos em trânsito</a>
+                    <a class="dropdown-item" href="produtosVendas.html">Valor de Venda</a>
                 </div>
             </div>
         </div>
@@ -51,6 +61,8 @@
             $telefone1=$_POST["telefone1"];
             $telefone2=$_POST["telefone2"];
             $email=$_POST["email"];
+            $cargo=$_POST["cargo"];
+            $salario=str_replace(",",".",$_POST["salario"]);
 
             // echo $nome . "<br>";
             // echo $dtnasc . "<br>";
@@ -68,7 +80,7 @@
 
             include 'conn.php';
 
-            $sql = "INSERT into funcionario (nome, dtnasc, sexo, escolaridade, deficiencia, estadocivil, endereco, bairro, cidade, cep, telefone1, telefone2, email) values ('$nome', '$dtnasc', '$sexo', '$escolaridade', '$deficiencia', '$estadocivil', '$endereco', '$bairro', '$cidade', '$cep', '$telefone1', '$telefone2', '$email')";
+            $sql = "INSERT into funcionario (nome, dtnasc, sexo, escolaridade, deficiencia, estadocivil, endereco, bairro, cidade, cep, telefone1, telefone2, email, cargo, salario) values ('$nome', '$dtnasc', '$sexo', '$escolaridade', '$deficiencia', '$estadocivil', '$endereco', '$bairro', '$cidade', '$cep', '$telefone1', '$telefone2', '$email', '$cargo', '$salario')";
             if (mysqli_query($conn, $sql)) {
                 echo "<h3>Registros armazenados</h3>"; 
                 echo $nome . "<br>";
@@ -84,13 +96,12 @@
                 echo $telefone1 . "<br>";
                 echo $telefone2 . "<br>";
                 echo $email . "<br>";
+                echo $cargo . "<br>";
+                echo $salario . "<br>";
             }
 
             mysqli_close($conn);
         ?>
-    </div>
-
-    <script>window.location.href("produtosProjetoFuturoListagem.php");</script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

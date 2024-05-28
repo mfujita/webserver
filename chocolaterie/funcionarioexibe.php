@@ -10,7 +10,7 @@
     <div class="container">
         <div class="d-flex ">
             <div class="p-5"><a href="index.html">Página<br>principal</a></div>
-            <div class="p-5"><a href="cadastrofuncionario.html">Cadastro de<br>funcionários</a></div>
+            <div class="p-5"><a href="funcionariocadastro.html">Cadastro de<br>funcionários</a></div>
         </div>
 
         <h2 class="text-center my-5">Relação dos funcionários</h2>
@@ -39,7 +39,7 @@
             </div>
          
             <div class="col-5 bg-info">
-                <form action="fichafuncionario.php" method="get">
+                <form action="funcionarioficha.php" method="get">
                     <div class="container">
                         <p><label for="matricula">Matrícula</label></p>
                         <p><input type="text" name="matricula"></p>

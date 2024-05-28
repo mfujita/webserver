@@ -10,8 +10,8 @@
     <div class="container">
         <div class="d-flex ">
             <div class="py-5 pr-3"><a href="index.html">Página<br>principal</a></div>
-            <div class="py-5 pr-3"><a href="cadastrofuncionario.html">Cadastro de<br>funcionários</a></div>
-            <div class="py-5 pr-3"><a href="exibefuncionario.php">Listagem de<br>funcionários</a></div>
+            <div class="py-5 pr-3"><a href="funcionariocadastro.html">Cadastro de<br>funcionários</a></div>
+            <div class="py-5 pr-3"><a href="funcionarioexibe.php">Listagem de<br>funcionários</a></div>
         </div>        
         
         <?php

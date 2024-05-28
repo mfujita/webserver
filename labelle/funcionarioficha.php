@@ -224,7 +224,6 @@
                             echo '    <div class="row my-2">';
                             echo '        <div class="col-3">Salário </div>';
                             echo '        <div class="col-3"><input type="text" class="form-control" name="salario" value="' . $rows["salario"] . '" .  size="20"></div>';
-                            echo '        <div class="col-6 text-right text-danger">Use ponto no lugar de vírgula</div>';
                             echo '    </div>';
                             echo '  </div>';
 
@@ -242,6 +241,22 @@
                         }
                     }
                 }
+            }
+            else if (isset($_GET["apagar"]))
+            {
+                echo '<form action="apagar.php" method="GET">';
+                echo '  <h4>Confirme digitando a identificação do funcionário ';
+                $sql = 'select nome from funcionario where id = ' . $matricula;
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result)) {
+                    while ($row = mysqli_fetch_assoc($result))
+                        echo $row["nome"] . "</h4>";
+                }
+                
+                echo '  <input type="text" class="my-5" size="20" placeholder="' . $matricula . '">';
+                echo '  <input type="hidden" name="matricula" value="' . $matricula . '">';
+                echo '  <input type="submit" name="Apagar">';
+                echo '</form>';
             }
 
             mysqli_close($conn);
