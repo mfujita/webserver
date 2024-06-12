@@ -29,12 +29,16 @@
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Produtos</button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="produtosProjetoFuturo.html">Projeto futuro</a>
-                <a class="dropdown-item" href="produtosProjetoFuturoListagem.php">Projeto futuro Listagem</a>
-                <a class="dropdown-item" href="produtosProducao.html">Produção</a>
-                <a class="dropdown-item" href="produtosEstoque.html">Produtos em estoque</a>
-                <a class="dropdown-item" href="produtosTransito.html">Produtos em trânsito</a>
-                <a class="dropdown-item" href="produtosVendas.html">Valor de Venda</a>
+            <a class="dropdown-item" href="produtosProjetoFuturo.html">Projeto futuro</a>
+                    <a class="dropdown-item" href="produtosProjetoFuturoListagem.php">Projeto futuro Listagem</a>
+                    <a class="dropdown-item" href="produtosProducao.html">Produção</a>
+                    <a class="dropdown-item" href="produtosProducaoListagem.php">Produção Listagem</a>
+                    <a class="dropdown-item" href="produtosEstoque.html">Produtos em estoque</a>
+                    <a class="dropdown-item" href="produtosEstoqueListagem.php">Produtos em estoque Listagem</a>
+                    <a class="dropdown-item" href="produtosTransito.html">Produtos em trânsito</a>
+                    <a class="dropdown-item" href="produtosTransitoListagem.php">Produtos em trânsito Listagem</a>
+                    <a class="dropdown-item" href="produtosVendas.html">Valor de Venda</a>
+                    <a class="dropdown-item" href="produtosVendasListagem.php">Valor de Venda Listagem</a>
             </div>
         </div>
     </div>

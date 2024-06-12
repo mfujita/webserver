@@ -23,7 +23,7 @@
             $sql = "INSERT INTO fluxo_caixa (vencimento,descricao,valor,recebidode, emitidopara, categoria, pago, recebido) VALUES ('$datavencimento', '$descricao', '$valor', '$recebidode', '$emitidopara', '$categoria', '$pago', '$recebido')";
             if (mysqli_query($conn, $sql))
             {
-                echo '<script>Dados cadastrados com sucesso!</script>';
+                echo '<script>alert("Dados cadastrados com sucesso!");</script>';
                 echo '<script>window.location = "contasapagarreceber.html"</script>';
             }
         ?>

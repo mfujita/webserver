@@ -44,6 +44,7 @@ CREATE TABLE projetoFuturo (
 
 CREATE TABLE producao (
 	id_producao int PRIMARY KEY AUTO_INCREMENT,
+	nome_producao varchar(100),
 	materiais varchar(255),
 	especificacoes varchar(255)
 );

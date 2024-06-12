@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Produção</title>
+    <title>Produtos Vendas Listagem</title>
+    <style>
+        .container { max-width: 94%;}
+        .caixa { display: flex;}
+        .caixa:nth-child(even) {
+            background-color: #CCC;
+        }
+        .coluna1 { width: 10%;}
+        .coluna2 { width: 50%;}
+        .coluna3 { width: 40%;}
+        .sticky { position: sticky; background-color: black; color: white; }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -43,44 +54,35 @@
             </div>
         </div>
 
-        <h1 class="display-4 text-center mb-5">Produção</h1>
-       
-        <form action="produtosProducao.php" method="POST">
-            <div class="row mb-2">
-                <div class="col-4">
-                    <label for="nome">Nome</label>
-                </div>
-                <div class="col-8">
-                    <input type="text" name="nome" class="form-control border border-dark">
-                </div>
-            </div>
+        <h1 class="text-center mb-4">Listagem das vendas dos produtos</h1>
 
-            <div class="row mb-2">
-                <div class="col-4">
-                    <label for="materiais">Materiais</label>
-                </div>
-                <div class="col-8">
-                    <input type="text" name="materiais" class="form-control border border-dark">
-                </div>
-            </div>
+        <div class="caixa sticky">
+            <div class='coluna1'>ID</div><div class='coluna2'>Nome Produção</div> <div class='coluna3'>Quantidade disponível</div>
+        </div>
 
-            <div class="row mb-5">
-                <div class="col-4">
-                    <label for="especificacoes">Especificações</label>
-                </div>
-                <div class="col-8">
-                    <input type="text" name="especificacoes" class="form-control border border-dark">
-                </div>
-            </div>
+        <?php
+            include 'conn.php';
 
-            <div class="text-center">
-                <input type="submit" class="btn btn-primary">
-            </div>
-        </form>
+            $sql = "SELECT * FROM estoque";
+            $result=mysqli_query($conn, $sql);
+            if (mysqli_num_rows($result) > 0)
+            {
+                while ($row = mysqli_fetch_assoc($result))
+                {
+                    echo '<div class="caixa">';
+                    echo "  <div class='coluna1'>" . $row["id_estoque"] . "</div><div class='coluna2'>" .  $row["nome_produto"] . "</div><div class='coluna3'>" . $row["qtde_disponivel"] . "</div>";
+                    echo '</div>';
+                }
+            }
+
+
+            mysqli_close($conn);
+        ?>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
