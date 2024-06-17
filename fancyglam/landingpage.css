@@ -1,0 +1,63 @@
+* { margin: 0; padding: 0; }
+.tela1 {
+    background: rgb(53,51,205);
+    background: linear-gradient(-90deg, rgba(53,51,205,1) 0%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    max-height: 600px;
+}
+.Tela1Esquerda {
+    width: 50%;
+    height: 600px;
+    justify-content: center;
+    padding-left: 5%;
+}
+.Tela1titulo{
+    color: white;
+    font-size: 4rem;
+}
+.Tela1texto {
+    font-size: 2rem;
+    color: white;
+}
+input[type="submit"] {
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.tela2 {
+    background: rgb(53,51,205);
+    background: linear-gradient(-85deg, rgba(53,51,205,1) 0%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Tela2Esquerda {
+    width: 40%;
+    height: 600px;
+    justify-content: center;
+    padding-left: 5%;
+}
+.Tela2Direita {
+    width: 60%;
+    height: 600px;
+    justify-content: center;
+    padding-left: 5%;
+}
+.tela2titulo1 {
+    font-size: 1.2rem;
+    color: white;
+}
+.tela2titulo2 {
+    font-size: 3rem;
+}
+#tela2roxo {
+    color: purple;
+    margin-bottom: 50px;
+}

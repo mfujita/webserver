@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        .container { height: 100vh; background-color: black;}
+        .tela1 { display: flex; flex-direction: column; height: 600px; justify-content: center; font-size: 4rem;}
+        #titulo1 { align-self: center; color: white; margin-bottom: 20px; }
+        #titulo2 { align-self: center; color: white; margin-bottom: 20px; }
+
+        .tela2 {
+            display: flex;
+            flex-direction: row;
+            height: 600px;
+            background-color: gray;
+            max-height: 600px;
+        }
+        .tituloTela2 { font-size: 3rem; justify-content: center;}
+        .textoTela2 { text-align: justify; margin-bottom: 30px; font-size: 1.4rem;}
+        .esquerdaTela2 {
+            width: 50%;
+            justify-content: center;
+            padding-left: 10%;
+            padding-right: 5%;
+        }
+        .direitaTela2 {
+            width: 50%;
+            max-height: 600px;
+        }
+        input[type="text"], input[type="email"], input[type="submit"] {
+            font-size: 1.1rem;
+        }
+        textarea { font-size: 1.1rem;}
+        input[type="submit"] { 
+            background-color: rgb(181, 181, 83);
+        }
+
+        .tela3 {
+            display: flex;
+            flex-direction: row;
+            height: 600px;
+            max-height: 600px;
+        }
+        .esquerdaTela3 {
+            width: 50%;
+        }
+        .direitaTela3 {
+            width: 50%;
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tela1">
+            <div id="titulo1">TECHLOG</div>
+            <div id="titulo2">Tecnologia e inovação</div>
+        </div>
+
+        <div class="tela2">
+            <div class="esquerdaTela2">
+                <div class="tituloTela2">Empresa TechLog</div>
+                <div class="textoTela2">Bem-vindo à página oficial da empresa TechLog, a sua parceira de confiança para soluções logísticas inovadoras e seguras na região de Americana, São Paulo.</div>
+                <div class="textoTela2">Contamos com uma equipe altamente qualificada e treinada para lidar com os mais diversos desafios logísticos.</div>
+            </div>
+
+            <div class="direitaTela2">
+                <form action="#" method="post">
+                    <input type="text" name="nome" placeholder="Nome" >
+                    <input type="text" name="telefone" placeholder="telefone">
+                    <br>
+                    <input type="email" name="email" placeholder="email" size="45px">
+                    <br>
+                    <textarea name="texto" id="texto" rows="10" cols="43px"></textarea>
+                    <br>
+                    <input type="submit" value="Fale conosco">
+                </form>
+            </div>
+        </div>
+
+        <div class="tela3">
+            <div class="esquerdaTela3">
+                imagem
+            </div>
+
+            <div class="direitaTela3">
+                <div class="tituloTela3">SOBRE</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
