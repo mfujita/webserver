@@ -1,0 +1,53 @@
+* { padding: 0; margin: 0;}
+body {
+    background-color: wheat;
+}
+.container {
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+nav {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 100px;
+}
+.t1_4x {
+    flex-grow: 4;
+    text-transform: uppercase;
+}
+.t1_2x {
+    flex-grow: 2;
+    text-transform: uppercase;
+}
+.t1caixa {
+    display: flex;
+    flex-direction: row;
+}
+.t1coluna1 {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+.t1titulo {
+    font-size: 4rem;
+    margin: 20px 10px;
+}
+.t1texto {
+    text-align: justify;
+}
+
+.t1coluna2 {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.t1coluna3 {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
