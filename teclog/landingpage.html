@@ -18,10 +18,12 @@
             background-color: gray;
             max-height: 600px;
         }
-        .tituloTela2 { font-size: 3rem; justify-content: center;}
+        .tituloTela2 { font-size: 3rem; }
         .textoTela2 { text-align: justify; margin-bottom: 30px; font-size: 1.4rem;}
         .esquerdaTela2 {
             width: 50%;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             padding-left: 10%;
             padding-right: 5%;
@@ -29,6 +31,9 @@
         .direitaTela2 {
             width: 50%;
             max-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         input[type="text"], input[type="email"], input[type="submit"] {
             font-size: 1.1rem;
@@ -46,12 +51,141 @@
         }
         .esquerdaTela3 {
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-        .direitaTela3 {
+        .tela3direita {
             width: 50%;
             background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .tela3titulo {
+            text-align: center;
+            font-size: 4rem;
+        }
+        .tela3texto {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .tela3traco {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 30px;
         }
 
+        .tela4 {
+            display: flex;
+            flex-direction: row;
+            height: 1000px;
+            max-height: 1000px;
+        }
+        .tela4esquerda {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: yellow;
+        }
+        .tela4direita {
+            width: 50%;
+        }
+        .tela4titulo {
+            text-align: center;
+            font-size: 4rem;
+        }
+        .tela4texto {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .tela4traco {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 5px 30px;
+        }
+
+        .tela5 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 1000px;
+            max-height: 1000px;
+            background-color: orange;
+        }
+        .tela5container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .tela5titulo {
+            text-align: center;
+            font-size: 3rem;
+        }
+        .tela5retangulo {
+            font-size: 1.5rem;
+            text-align: left;
+            background-color: white;
+            width: 30%;
+            height: 20vh;
+            padding: 15px;
+            margin: 50px;
+        }
+
+        .tela6 {
+            height: 800px;
+            max-height: 1000x;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: lightgray;
+        }
+        .tela6titulo {
+            text-align: center;
+            font-size: 2rem;
+        }
+        .tela6traco {
+            text-align: center;
+            font-size: 3rem;
+        }
+        .tela6linha {
+            display: flex;
+            flex-direction: row;
+        }
+        .tela6coluna {
+            margin: 20px;
+        }
+        .tela6servico {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .tela6texto {
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        .tela7 {
+            height: 800px;
+            max-height: 1000x;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .tela7rodape {
+            margin-top: 30px;
+ 
+        }
+        .tela7nomeEmpresa {
+            font-weight: bold;
+            margin-left: 50px;
+            font-size: 1.2rem;
+        }
+        .tela7texto {
+            margin-left: 50px;
+            font-size: 1.2rem;
+        }
 
     </style>
 </head>
@@ -88,8 +222,87 @@
                 imagem
             </div>
 
-            <div class="direitaTela3">
-                <div class="tituloTela3">SOBRE</div>
+            <div class="tela3direita">
+                <div class="tela3traco">______</div>
+                <div class="tela3titulo">SOBRE</div>
+                <div class="tela3texto">Nossa missão é proporcionar excelência no transporte de cargas, garantindo que seus produtos cheguem ao destino com total segurança e pontualidade.</div>
+                <div class="tela3texto">Oferecendo serviços dinâmicos e eficientes, adaptados às necessidades de cada cliente.</div>
+                <div class="tela3traco">______</div>
+            </div>
+        </div>
+
+        <div class="tela4">
+            <div class="tela4esquerda">
+                <div class="tela4traco">___________</div>
+                <div class="tela4titulo">preocupação com</div>
+                <div class="tela4titulo">MEIO AMBIENTE</div>
+                <div class="tela4texto">Nossos veículos são equipados com motores de baixo consumo de combustível e emitimos relatórios de impacto ambiental para monitorar e reduzir nossa pegada de carbono.</div>
+                <div class="tela4traco">¯¯¯¯¯¯¯¯¯¯¯</div>
+            </div>
+
+            <div class="tela4direita">
+                <img src="" alt="imagem tela 4">
+            </div>
+        </div>
+
+        <div class="tela5">
+            <div class="tela5titulo">PERGUNTAS FREQUENTES</div>
+            <div class="tela5container">
+                <div class="tela5retangulo">
+                    <div class="tela5caixa">Qual a política de entrega da empresa?</div>
+                    <div class="tela5caixa">TechLog possui uma política de entrega baseada em segurança, qualidade e eficiência.</div>
+                </div>
+                <div class="tela5retangulo">
+                    <div class="tela5caixa">Quais os custos comuns de entrega?</div>
+                    <div class="tela5caixa">Eles são variaveis de acordo com a distância do local que será destinado a entrega.</div>
+                </div>
+            </div>
+            <div class="tela5container">
+                <div class="tela5retangulo">
+                    <div class="tela5caixa">O que devo fazer se meu pedido não chegar no prazo?</div>
+                    <div class="tela5caixa">Entre em contato com nosso serviço de atendimento ao cliente pelo telefone ou e-mail.</div>
+                </div>
+                <div class="tela5retangulo">
+                    <div class="tela5caixa">Quais são os procedimentos para devoluções e logística reversa?</div>
+                    <div class="tela5caixa">Deve preencher nosso formulário de devolução disponível no site e seguir as instruções fornecidas.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tela6">
+            <div class="tela6titulo">SERVIÇOS OFERECIDOS</div>
+            <div class="tela6traco">¯¯¯¯¯¯¯¯¯¯¯¯¯</div>
+            <div class="tela6linha">
+                <div class="tela6coluna">
+                    <div class="tela6imagem"><img src="" alt="TRANSPORTE RODOVIÁRIO"></div>
+                    <div class="tela6servico">TRANSPORTE RODOVIÁRIO</div>
+                    <div class="tela6texto">Frota moderna e diversificada para Atender às mais diversas necessidades de transporte terrestre.</div>
+                </div>
+                <div class="tela6coluna">
+                    <div class="tela6imagem"><img src="" alt="GESTÃO DE ARMAZÉNS"></div>
+                    <div class="tela6servico">GESTÃO DE ARMAZÉNS</div>
+                    <div class="tela6texto">Soluções completas de armazenagem com sistemas automatizados para controle de inventário.</div>
+                </div>
+                <div class="tela6coluna">
+                    <div class="tela6imagem"><img src="" alt="LOGISTICA REVERSA"></div>
+                    <div class="tela6servico">LOGISTICA REVERSA</div>
+                    <div class="tela6texto">Serviço especializado para a coleta e devolução de mercadorias, contribuindo para a sustentabilidade do meio ambiente.</div>
+                </div>
+                <div class="tela6coluna">
+                    <div class="tela6imagem"><img src="" alt="CONSULTORIA LOGISTICA"></div>
+                    <div class="tela6servico">CONSULTORIA LOGISTICA</div>
+                    <div class="tela6texto">Assessoria personalizada para otimização de processos logísticos garantindo maior eficiência e redução de custos.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tela7">
+            <div class="tela7imagem"><img src="mapa.jpg" alt="mapa" width="100%"></div>
+            <div class="tela7rodape">
+                <div class="tela7nomeEmpresa">TechLog</div>
+                <div class="tela7texto">Rua Antônio Mollon IV 791</div>
+                <div class="tela7texto">Telefone: (19)99887-2510</div>
+                <div class="tela7texto">E-mail: TechLog@gmail.com</div>
             </div>
         </div>
     </div>
