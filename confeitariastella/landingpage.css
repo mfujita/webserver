@@ -1,0 +1,78 @@
+* { padding: 0; margin: 0;}
+
+body {
+    background: rgb(59,15,83);
+    background: linear-gradient(72deg, rgba(59,15,83,0.8036309250262605) 31%, rgba(11,0,26,1) 98%);
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 1.6rem;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+ .t1navSeparador { width: 10vw;}
+.t1nav {
+    width: calc(78%/6);
+    text-align: center;
+}
+a { text-decoration: none; color: white;}
+.t1navPedido {
+    width: 20%;
+    text-align: center;
+    border: 2px solid white;
+    padding: 5px;
+}
+hr {
+    border-color: pink;
+    border-width: 3px;
+}
+
+.t1caixa {
+    display: flex;
+    flex-direction: row;
+}
+.t1coluna1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.t1destaque1 {
+    margin: 50px 10px 50px 0;
+    font-size: 2rem;
+    border: 1px solid pink;
+    border-radius: 40px;
+    background-color: pink;
+    text-align: center;
+    padding: 10px;
+    margin-left: 30px;
+}
+.t1titulo1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 50px;
+}
+.t1texto {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.t1distanciaHorizontal { margin-bottom: 50px;}
+.t1destaque2 {
+    border: 1px solid pink;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 10px;
+}
+li {
+    font-size: 30px;
+    list-style-position: inside;
+    padding-left: 30px;
+    background-color: pink;
+
+}
