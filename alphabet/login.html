@@ -14,6 +14,14 @@
             width: 80%;
             margin: auto;
         }
+        .fundoBotao {
+            border: 1px solid white;
+            border-radius: 30px;
+            background-color: white;
+            width: 300px;
+            margin: auto;
+            padding: -20px;
+        }
         .container {
             background-color: #1a2d3b;
             color: white;
@@ -65,9 +73,11 @@
     <div class="containerPai">
         <div class="container">
             <form action="#" method="post">
-                <div class="flex">
-                    <div id="registro" onclick="transicaoRegistroEntrada()">Registre-se</div>
-                    <div id="entrada" onclick="transicaoRegistroEntrada()">Entrar</div>
+                <div class="fundoBotao">
+                    <div class="flex">
+                        <div id="registro" onclick="transicaoRegistroEntrada()">Registre-se</div>
+                        <div id="entrada" onclick="transicaoRegistroEntrada()">Entrar</div>
+                    </div>
                 </div>
 
                 <div class="flexColumn">
@@ -121,7 +131,6 @@
                 registro.style.backgroundColor = 'gray';
                 entrada.style.backgroundColor = "#1a2d3b";
             }
-
         }
     </script>
 </body>
